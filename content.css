@@ -1,0 +1,128 @@
+.popads,
+.popvalues {
+    position: fixed;
+    z-index: 999999;
+    right: 10px;
+    top: 10px;
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.15) 2px 2px 12px 0px;
+    display: none;
+}
+.popvalues {
+    right: auto;
+    top: auto;
+    left: 65px;
+    bottom: 5px;
+    display: block;
+}
+.popads_close,
+.popvalues_close {
+    position: absolute;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    font-weight: 600;
+    left: -10px;
+    top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.popvalues_close {
+    left: auto;
+    right: -10px;
+}
+.popads_close:hover,
+.popvalues_close:hover {
+    opacity: 1;
+}
+.popads_show {
+    display: block;
+}
+.popads_title {
+    font-size: 28px;
+    line-height: 1.2;
+}
+.popvalues_title {
+    font-size: 16px;
+    line-height: 1.2;
+    display: none;
+}
+.popads_title span {
+    padding-left: 7px;
+    font-weight: bold;
+    margin-left: 4px;
+    font-family: AmazonEmber-Bold, "Amazon Ember", Arial, Helvetica, sans-serif !important;
+}
+.bt_value_update {
+    line-height: 1.465;
+    font-weight: normal;
+    font-family: "Amazon Ember", Helvetica, sans-serif;
+    white-space: nowrap;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px 12px;
+    background: rgb(0, 115, 199);
+    border-color: transparent;
+    box-shadow: rgba(35, 47, 63, 0.3) 0px 1px 1px;
+    font-size: 13px;
+    color: #fff;
+    max-width: 120px;
+    margin-left: auto;
+    transition: color 100ms ease 0s, background-color 100ms ease 0s, border-color 100ms ease 0s, box-shadow 100ms ease 0s;
+}
+.bt_value_update:hover {
+    background: rgb(0, 97, 169);
+    box-shadow: rgba(35, 47, 63, 0.4) 0px 1px 2px;
+}
+.bt_value_update:active {
+    border-color: transparent;
+    background: rgb(0, 80, 138);
+    box-shadow: rgba(35, 47, 63, 0.8) 0px 1px 2px;
+}
+.flex {
+    padding: 3px 0px;
+}
+.font_bold {
+    font-weight: 600;
+}
+.ml10 {
+    margin-left: 10px;
+}
+div[data-e2e-id="tableCell_cell_bidIncrease"] > .ads_pert,
+div[data-e2e-id="tableCell_cell_keywordBid"] > .ads_pert {
+    margin-top: -6px;
+    margin-left: 8px;
+    font-size: 11px;
+}
+div[data-e2e-id="tableCell_cell_bidIncrease"] > div {
+    margin-top: -2px;
+}
+
+.popvalues_cont {
+    font-size: 12px;
+}
+.pop_input {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.pop_input div {
+    width: 100px;
+}
+.pop_input input[type="number"] {
+    height: auto;
+    box-shadow: none;
+    width: 80px;
+    padding: 4px 6px;
+}

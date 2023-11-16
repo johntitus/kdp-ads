@@ -1,0 +1,70 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "Amazon ads",
+    "description": "Amazon ads",
+    "web_accessible_resources": [{
+        "resources": [
+            "popup.html",
+            "images/*.png",
+            "images/*.gif",
+            "images/*.svg",
+            "fonts/*.ttf",
+            "inject.js"
+        ],
+        "matches": ["<all_urls>"],
+        "use_dynamic_url": true
+    }],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/icon16.png",
+            "32": "images/icon32.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "content_scripts": [{
+        "run_at": "document_end",
+        "css": [
+            "content.css"
+        ],
+        "js": [
+            "lib.js",
+            "content.js"
+        ],
+        "matches": [
+            "https://advertising.amazon.com/*",
+            "https://advertising.amazon.co.uk/*",
+            "https://advertising.amazon.fr/*",
+            "https://advertising.amazon.de/*",
+            "https://advertising.amazon.es/*",
+            "https://advertising.amazon.ca/*"
+        ]
+    }],
+    "permissions": [
+        "webRequest",
+        "browsingData",
+        "activeTab",
+        "tabs",
+        "storage",
+        "webNavigation",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+        "https://advertising.amazon.com/*",
+        "https://advertising.amazon.co.uk/*",
+        "https://advertising.amazon.fr/*",
+        "https://advertising.amazon.de/*",
+        "https://advertising.amazon.es/*",
+        "https://advertising.amazon.ca/*"
+    ]
+}
